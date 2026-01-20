@@ -4,7 +4,9 @@
 
 [Reddit](https://www.reddit.com/r/ElegooNeptune3/comments/1mbyt2n/neptune_3_proplusmax_printers_running_klipper_can/?share_id=pa4ONSfTpuDBc9Xl_lwk-&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1)
 
-[Building firmware](https://pages.tralce.com/3-d-printing-guides/setting-up-klipper-on-my-neptune-3-pro/)
+[Violet's Building firmware](https://pages.tralce.com/3-d-printing-guides/setting-up-klipper-on-my-neptune-3-pro/)
+
+[Violet's configs](https://github.com/tralce/klipper-configs-public)
 
 [Display](https://www.amazon.com/ELECROW-Display-1024X600-Function-Raspberry/dp/B01GDMDFZA/)
 
@@ -16,6 +18,8 @@
 
 [Ricky Impey's videos](https://youtube.com/playlist?list=PLC4bOo0vesmLJ211bmSiWaJ9ahBUQUjjv)
 
+[Discourse](https://klipper.discourse.group/)
+
 ## My notes
 
-To configure the `[mcu]` section you need to know the serial device ID. Watch this [video](https://www.youtube.com/watch?v=W3i1Aa2mRJE)
+To configure the `[mcu]` section you need to know the serial device ID. I _think_ that I can get that by ssh'ing into the Pi and `ls /dev/serial/by-id/*`. If that is not it then watch this [video](https://www.youtube.com/watch?v=W3i1Aa2mRJE)
