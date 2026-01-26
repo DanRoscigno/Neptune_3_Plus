@@ -55,3 +55,24 @@ G92 E0                                       ;Reset Extruder
 ;LAYER_COUNT:[total_layer_count]
 ;LAYER:0
 ```
+
+### End GCode
+
+```
+;PRINT_END
+G90                                                                                            ;Absolute positionning
+M83                                                                                            ; extruder relative mode
+G1 X10 Y{print_bed_max[1]*0.8} Z{min(max_layer_z+50, printable_height)} E-5 F{travel_speed*60} ; Move print head up
+M106 S0                                                                                        ;Turn-off fan
+M104 S0                                                                                        ;Turn-off hotend
+M140 S0                                                                                        ;Turn-off bed
+M84 X Y E                                                                                      ;Disable all steppers but Z
+```
+
+### Before layer change GCode
+
+```
+;BEFORE_LAYER_CHANGE
+;[layer_z]
+G92 E0  ;Reset the extruder before the next layer
+```
